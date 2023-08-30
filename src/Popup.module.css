@@ -1,0 +1,51 @@
+/* Popup.module.css */
+
+/* Styles for the popup container */
+.popup {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1; /* Appears above other content */
+}
+
+/* Styles for the content within the popup */
+.popupContent {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the content */
+  background-color: #fff; /* White background */
+  padding: 20px; /* Padding around the content */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle box shadow for depth */
+}
+
+.popupBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+/* Styles for the close button of the popup */
+.popupClose {
+  position: absolute;
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+  cursor: pointer; /* Cursor changes to a pointer on hover */
+}
+
+/* Styles for text content within the popup */
+.popupText {
+  line-height: 1.5; /* Set line height for better readability */
+}
