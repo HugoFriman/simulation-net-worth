@@ -1,29 +1,37 @@
 .calculatorContainer {
   flex: 1;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-width: 300px;
+  display: flex;
+  margin: auto;
+  gap: 30px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.divContainer {
+  min-width: -moz-available;
 }
 
 .popupText {
-  line-height: 1.5;
+  line-height: 2;
 } 
 
 .lossCapacityBox {
   background-color: #5400e2;
   color: #fff;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: auto;
   text-align: left;
-  display: inline-block;
-  width: 100%;
+
+  width: -moz-available;
 }
 
 .lossBearingTitle {
-  font-size: 18px;
   color: rgb(255, 255, 255); /* Changed color here */
   text-align: left;
   width: 100%;
@@ -32,44 +40,30 @@
 }
 
 .result {
-  font-size: 30px;
+  font-size: 34px;
   text-align: right;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 .inputField {
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 8px;
-  width: 100%;
+  padding: 10px;
   transition: border-color 0.2s;
+  width: -moz-available;
   vertical-align: middle;
-  line-height: 2;
-}
-
-.inputField:focus {
-  border-color: #5400e2;
-  outline: none;
 }
 
 .currency {
-  float: left;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 12px;
+  padding: 10px;
   transition: border-color 0.2s;
   width: 100%;
-}
-
-.currency:focus {
-  border-color: #5400e2;
-  outline: none;
+  vertical-align: middle;
 }
 
 .divider {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid rgb(127, 127, 127);
   margin-top: 20px;
   margin-bottom: 20px;
 }

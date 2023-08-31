@@ -63,7 +63,7 @@ function App() {
       <div className={styles.containerNetWorth}>
         <div className={styles.text}>
           <div className={styles.divider}></div>
-          <h1 className={styles.h1StyleBlue}>More information</h1>
+          <h2 className={styles.h2StyleBlue}>More information</h2>
         </div>
       </div>
 
@@ -94,9 +94,7 @@ function App() {
             <b>Read more →</b>
           </label>
         </div>
-      </div>
 
-      <div className={styles.containerNetWorth}>
         <div className={styles.text}>
           <h2 className={styles.h2Style}>Annual financial commitments</h2>
           <p>
@@ -119,6 +117,8 @@ This simulations gives you an indication of your ability to bear losses.</p>
         </div>
 
       </div>
+      {" "}
+
 
       <Modal id="income" isOpen={modals.income} onClose={() => closeModal('income')}>
       <h2>Net annual income</h2>

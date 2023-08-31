@@ -58,22 +58,26 @@ const Calculator = () => {
 
   return (
     <div className={styles.calculatorContainer}>
-      <div>
+      <div className={styles.divContainer}>
         <label className={styles.popupText} htmlFor="currency">
           Select Currency
         </label>
+        <br></br>
         <select id="currency" className={styles.currency} onChange={handleInputChange} value={currency}>
           <option value="SEK">SEK</option>
           <option value="EUR">EUR</option>
           <option value="USD">USD</option>
-          <option value="DKK">GBP</option>
+          <option value="GBP">GBP</option>
+          <option value="DKK">DKK</option>
+
 
           {/* Add more currency options as needed */}
         </select>
       </div>
       
 
-      <div><label className={styles.popupText} htmlFor="netIncome">
+      <div className={styles.divContainer}>
+        <label className={styles.popupText} htmlFor="netIncome">
         + Annual Net Income
       </label>
       <input
@@ -85,7 +89,7 @@ const Calculator = () => {
         onChange={handleInputChange}
       />
       </div>
-      <div>
+      <div className={styles.divContainer}>
       <label className={styles.popupText} htmlFor="assets">
         + Assets
       </label>
@@ -98,7 +102,7 @@ const Calculator = () => {
         onChange={handleInputChange}
       />
       </div>
-      <div>
+      <div className={styles.divContainer}>
       <label className={styles.popupText} htmlFor="annualCommitments">
         - Annual Financial Commitments
       </label>
@@ -111,9 +115,8 @@ const Calculator = () => {
         onChange={handleInputChange}
       />
       </div>
-      <div style={{ clear: 'both' }}></div>
-      <div className={styles.divider}></div>
-      <div>
+      
+      <div className={styles.divContainer}>
       <label className={styles.popupText} htmlFor="netWorth">
         = Net Worth
       </label>
@@ -127,7 +130,7 @@ const Calculator = () => {
         onChange={handleInputChange}
       />
       </div>
-      <div>
+      <div className={styles.divContainer}>
       <div className={styles.lossCapacityBox}>
         <p className={styles.lossBearingTitle}>Loss Bearing Capacity (10% of net worth):</p>
         <span className={styles.result}>

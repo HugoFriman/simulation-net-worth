@@ -12,7 +12,7 @@ function Modal({ isOpen, onClose, children }) {
     <div className={`${styles.modal} ${isOpen ? styles.open : ''}`} onClick={handleBackgroundClick}>
       <div className={styles.modalContent}>
         <span className={styles.closeButton} onClick={onClose}>
-          &times;
+          x
         </span>
         {children}
       </div>
