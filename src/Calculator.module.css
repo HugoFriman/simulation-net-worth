@@ -10,10 +10,11 @@
   gap: 30px;
   align-items: flex-start;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .divContainer {
-  min-width: -moz-available;
+  width: 100%;
 }
 
 .popupText {
@@ -27,8 +28,6 @@
   border-radius: 5px;
   margin: auto;
   text-align: left;
-
-  width: -moz-available;
 }
 
 .lossBearingTitle {
@@ -49,8 +48,11 @@
   border-radius: 5px;
   padding: 10px;
   transition: border-color 0.2s;
-  width: -moz-available;
   vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .currency {
@@ -58,8 +60,12 @@
   border-radius: 5px;
   padding: 10px;
   transition: border-color 0.2s;
-  width: 100%;
   vertical-align: middle;
+  width: 100%;
+
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .divider {
