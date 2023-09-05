@@ -1,0 +1,78 @@
+.calculatorContainer {
+  /* Set container properties */
+  flex: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .calculatorContainer {
+    flex: 0.8;
+  }
+}
+
+.divContainer {
+  /* Divide container */
+  width: 100%;
+}
+
+.calculatorBodyText {
+  /* Styling for popup text */
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+.lossClaculatorCapacityBox {
+  /* Loss capacity box styling */
+  background-color: #5400e2;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: auto;
+  text-align: left;
+}
+
+.lossCalculatorBearingTitle {
+  /* Loss-bearing title styling */
+  color: rgb(255, 255, 255); /* White color */
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  font-weight: 400;
+  padding: 0;
+}
+
+.calculatorLossBearingResult {
+  /* Styling for result text */
+  font-size: 34px;
+  text-align: right;
+  font-weight: 400;
+}
+
+.calculatorInputField,
+.calculatorCurrency {
+  /* Styling for input fields and currency dropdown */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  transition: border-color 0.2s;
+  vertical-align: middle;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dividerPopup {
+  /* Styling for divider */
+  border-top: 1px solid #ddd;
+  width: 100%;
+}
